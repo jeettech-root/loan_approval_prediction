@@ -42,7 +42,21 @@ FEATURE_NAME_MAP = {
 
 
 def load_model():
-    return joblib.load(MODEL_PATH)
+    """Load the saved model. Returns the model or None on failure.
+    This wrapper logs the exception for server logs and shows a friendly message in the UI.
+    """
+    try:
+        return joblib.load(MODEL_PATH)
+    except Exception as e:
+        # Log full exception to server logs for diagnosis, but show a concise UI message.
+        import logging
+        logging.exception("Failed to load model from %s", MODEL_PATH)
+        try:
+            st.error("Model could not be loaded. Please check the deployment dependencies and model path.")
+        except Exception:
+            # st may not be available in some contexts; ignore UI message failure here
+            pass
+        return None
 
 
 def education_code(value: str) -> int:
