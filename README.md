@@ -256,22 +256,7 @@ The models are evaluated using:
 * ROC-AUC
 * Confusion Matrix
 
-### Model Comparison
 
-Replace the values below with the actual results from your notebook.
-
-| Model                 | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
-| --------------------- | -------: | --------: | -----: | -------: | ------: |
-| Logistic Regression   |        — |         — |      — |        — |       — |
-| Decision Tree         |        — |         — |      — |        — |       — |
-| Random Forest         |        — |         — |      — |        — |       — |
-| KNN                   |        — |         — |      — |        — |       — |
-| SVM                   |        — |         — |      — |        — |       — |
-| **Gradient Boosting** |    **—** |     **—** |  **—** |    **—** |   **—** |
-
-> Do not add fake metrics. Replace the values with the actual results from model evaluation.
-
----
 
 ## 🏆 Final Model
 
@@ -686,25 +671,8 @@ Possible future improvements include:
 * Automated retraining
 * Cloud-based model serving
 
----
 
-## 📸 Screenshots
 
-Add screenshots of your deployed application here.
-
-### 🏠 Home Page
-
-*Add your Streamlit home page screenshot here.*
-
-### 📊 Prediction Result
-
-*Add your prediction result screenshot here.*
-
-### 🧠 SHAP Explanation
-
-*Add your SHAP explanation screenshot here.*
-
----
 
 ## 📚 Learning Outcomes
 
